@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Genshin Impact</string>
+    <string name="logo_gi">Logo de Genshin Impact</string>
+    <string name="personajes">Personajes</string>
+    <string name="paimon">Imagen de Paimon</string>
+    <string name="proximamente">…</string>
 </resources>

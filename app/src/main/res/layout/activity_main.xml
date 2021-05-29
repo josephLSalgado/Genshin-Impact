@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/logoGenshinImpact"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/black"
+        android:contentDescription="@string/logo_gi"
+        android:src="@drawable/genshin_impact_logo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logoGenshinImpact"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <Button
+            android:id="@+id/botonPersonajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personajes"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/botonHousing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proximamente"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/botonInventario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proximamente"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/botonPlanificador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proximamente"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/botonMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proximamente"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/paimon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/paimon"
+            app:srcCompat="@drawable/paimon" />
+
+    </LinearLayout>
+</RelativeLayout>
