@@ -27,21 +27,21 @@ public class Personaje {
     @ColumnInfo(name = "material_comun")
     private String materialComun;
 
-    public Personaje(@NonNull String _nombre, int _rareza, String _elemento, String _arma,
-                     String _nacion, String _materialPersonaje, String _piedraElemental,
-                     String _especialidadLocal, String _materialTalento, String _materialBossSemanal,
-                     String _materialComun) {
-        this.nombre = _nombre;
-        this.rareza = _rareza;
-        this.elemento = _elemento;
-        this.arma = _arma;
-        this.nacion = _nacion;
-        this.materialPersonaje = _materialPersonaje;
-        this.piedraElemental = _piedraElemental;
-        this.especialidadLocal = _especialidadLocal;
-        this.materialTalento = _materialTalento;
-        this.materialBossSemanal = _materialBossSemanal;
-        this.materialComun = _materialComun;
+    public Personaje(@NonNull String nombre, int rareza, String elemento, String arma,
+                     String nacion, String materialPersonaje, String piedraElemental,
+                     String especialidadLocal, String materialTalento, String materialBossSemanal,
+                     String materialComun) {
+        this.nombre = nombre;
+        this.rareza = rareza;
+        this.elemento = elemento;
+        this.arma = arma;
+        this.nacion = nacion;
+        this.materialPersonaje = materialPersonaje;
+        this.piedraElemental = piedraElemental;
+        this.especialidadLocal = especialidadLocal;
+        this.materialTalento = materialTalento;
+        this.materialBossSemanal = materialBossSemanal;
+        this.materialComun = materialComun;
     }
 
     public @NonNull String getNombre() {return this.nombre;}

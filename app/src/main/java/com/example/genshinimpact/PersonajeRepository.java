@@ -3,11 +3,13 @@ package com.example.genshinimpact;
 import android.app.Application;
 import android.os.AsyncTask;
 
+import androidx.lifecycle.LiveData;
+
 import java.util.List;
 
 public class PersonajeRepository {
     private PersonajeDao personajeDao;
-    private List<Personaje> todosLosPersonajes;
+    private LiveData<List<Personaje>> todosLosPersonajes;
 
     PersonajeRepository(Application application) {
         AppRoomDatabase appRoomDatabase = AppRoomDatabase.getDatabase(application);
@@ -15,7 +17,7 @@ public class PersonajeRepository {
         todosLosPersonajes = personajeDao.getTodosLosPersonajes();
     }
 
-    public List<Personaje> getTodosLosPersonajes() {
+    public LiveData<List<Personaje>> getTodosLosPersonajes() {
         return todosLosPersonajes;
     }
 

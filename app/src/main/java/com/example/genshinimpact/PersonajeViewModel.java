@@ -3,12 +3,13 @@ package com.example.genshinimpact;
 import android.app.Application;
 
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
 public class PersonajeViewModel extends AndroidViewModel {
     private PersonajeRepository personajeRepository;
-    private List<Personaje> todosLosPersonajes;
+    private LiveData<List<Personaje>> todosLosPersonajes;
 
     public PersonajeViewModel(Application application) {
         super(application);
@@ -20,7 +21,7 @@ public class PersonajeViewModel extends AndroidViewModel {
         personajeRepository.insert(personaje);
     }
 
-    public List<Personaje> getTodosLosPersonajes() {
+    public LiveData<List<Personaje>> getTodosLosPersonajes() {
         return todosLosPersonajes;
     }
 }
