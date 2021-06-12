@@ -14,4 +14,7 @@ public interface PersonajeDao {
 
     @Query("SELECT * FROM tabla_personaje ORDER BY nombre ASC")
     LiveData<List<Personaje>> getTodosLosPersonajes();
+
+    @Query("DELETE FROM tabla_personaje")
+    void deleteAll();
 }

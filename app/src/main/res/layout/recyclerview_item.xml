@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/padding">
 
@@ -10,5 +10,8 @@
         android:id="@+id/botonSeleccionPersonaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_personajes"
+        android:padding="@dimen/padding_personajes"
         tools:text="Aquí va el nombre del item" />
 </LinearLayout>

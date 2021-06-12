@@ -37,6 +37,7 @@ public class PersonajeListAdapter extends RecyclerView.Adapter<PersonajeListAdap
 
     void setPersonajes(List<Personaje> listPersonajes) {
         personajes = listPersonajes;
+        notifyDataSetChanged();
     }
 
     @Override
